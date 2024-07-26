@@ -1,0 +1,36 @@
+{
+  "name": "nestjs-knife4j2",
+  "version": "0.0.1",
+  "description": "nestjs knife4j swagger openapi api doc",
+  "main": "dist/index.js",
+  "repository": "github:jkhuangfu/nestjs-knife4j2",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc -w",
+    "publish": "npm run build && npm publish",
+    "push": "git add . && git commit -m auto-commit && git push"
+  },
+  "files": [
+    "/public",
+    "/dist"
+  ],
+  "keywords": [],
+  "author": "jkhuangfu",
+  "devDependencies": {
+    "@nestjs/common": "*",
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "@types/express": "^4.17.21",
+    "express": "*",
+    "fastify": "*"
+  },
+  "dependencies": {
+    "@fastify/static": "^7.0.4"
+  }
+}
