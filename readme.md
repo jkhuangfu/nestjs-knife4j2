@@ -1,10 +1,14 @@
+## Description
+
+The provided code sets up Knife4j for enhancing Swagger/OpenAPI documentation in a NestJS application, supporting both Express and Fastify HTTP adapters.
+
 ## Usage
 
 ```shell
 npm install nestjs-knife4j2
 ```
 
-in main.ts
+## in main.ts
 
 ```typescript
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
@@ -24,7 +28,7 @@ async function bootstrap(){
   SwaggerModule.setup('api', app, document)
   knife4jSetup(app, [
     {
-      name: '2.X版本',
+      name: '2.0 version',
       url: `/api-json`,
       swaggerVersion: '2.0',
       location: `/api-json`,
