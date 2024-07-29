@@ -1,9 +1,12 @@
 {
   "name": "nestjs-knife4j2",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "nestjs knife4j swagger openapi api doc",
   "main": "dist/index.js",
-  "repository": "github:jkhuangfu/nestjs-knife4j2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkhuangfu/nestjs-knife4j2.git"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
