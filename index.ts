@@ -1,5 +1,6 @@
 import type { INestApplication } from '@nestjs/common'
 import { resolve, join } from 'node:path'
+import fastifyStatic from '@fastify/static'
 
 interface Service {
   name: string
@@ -26,7 +27,7 @@ export async function knife4jSetup(app: INestApplication, services: Service[]) {
     return
   }
   const fastifyInstance = app.getHttpAdapter().getInstance()
-  fastifyInstance.register(require('@fastify/static'), {
+  fastifyInstance.register(fastifyStatic, {
     root: join(__dirname, '../public'),
     prefix: '/',
   })

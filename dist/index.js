@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.knife4jSetup = knife4jSetup;
 const node_path_1 = require("node:path");
+const static_1 = require("@fastify/static");
 async function knife4jSetup(app, services) {
     const httpAdapter = app.getHttpAdapter().getType();
     if (!['express', 'fastify'].includes(httpAdapter)) {
@@ -22,7 +23,7 @@ async function knife4jSetup(app, services) {
         return;
     }
     const fastifyInstance = app.getHttpAdapter().getInstance();
-    fastifyInstance.register(require('@fastify/static'), {
+    fastifyInstance.register(static_1.default, {
         root: (0, node_path_1.join)(__dirname, '../public'),
         prefix: '/',
     });
