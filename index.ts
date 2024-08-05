@@ -30,6 +30,7 @@ export async function knife4jSetup(app: INestApplication, services: Service[]) {
   fastifyInstance.register(fastifyStatic, {
     root: join(__dirname, '../public'),
     prefix: '/',
+    decorateReply: false,
   })
   fastifyInstance.get('/services.json', (_, repl: any) => {
     repl.send(services)

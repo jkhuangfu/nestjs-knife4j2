@@ -26,6 +26,7 @@ async function knife4jSetup(app, services) {
     fastifyInstance.register(static_1.default, {
         root: (0, node_path_1.join)(__dirname, '../public'),
         prefix: '/',
+        decorateReply: false,
     });
     fastifyInstance.get('/services.json', (_, repl) => {
         repl.send(services);
