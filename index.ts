@@ -1,6 +1,5 @@
 import type { INestApplication } from '@nestjs/common'
 import { resolve, join } from 'node:path'
-import fastifyStatic from '@fastify/static'
 
 interface Service {
   name: string
@@ -8,7 +7,7 @@ interface Service {
   swaggerVersion: string
   location: string
 }
-export async function knife4jSetup(app: INestApplication, services: Service[]) {
+export async function knife4jSetup(app: INestApplication, services: Service[], fastifyStatic?: unknown) {
   const httpAdapter = app.getHttpAdapter().getType()
   if (!['express', 'fastify'].includes(httpAdapter)) {
     throw new Error('http adapter only supported express and fastify')
