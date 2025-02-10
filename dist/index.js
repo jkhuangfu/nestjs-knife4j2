@@ -2,8 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.knife4jSetup = knife4jSetup;
 const node_path_1 = require("node:path");
-const static_1 = require("@fastify/static");
-async function knife4jSetup(app, services) {
+async function knife4jSetup(app, services, fastifyStatic) {
     const httpAdapter = app.getHttpAdapter().getType();
     if (!['express', 'fastify'].includes(httpAdapter)) {
         throw new Error('http adapter only supported express and fastify');
@@ -22,8 +21,11 @@ async function knife4jSetup(app, services) {
         });
         return;
     }
+    if (!fastifyStatic) {
+        throw new Error('@fastify/static is not installed please install it first');
+    }
     const fastifyInstance = app.getHttpAdapter().getInstance();
-    fastifyInstance.register(static_1.default, {
+    fastifyInstance.register(fastifyStatic, {
         root: (0, node_path_1.join)(__dirname, '../public'),
         prefix: '/',
         decorateReply: false,

@@ -5,5 +5,5 @@ interface Service {
     swaggerVersion: string;
     location: string;
 }
-export declare function knife4jSetup(app: INestApplication, services: Service[]): Promise<void>;
+export declare function knife4jSetup(app: INestApplication, services: Service[], fastifyStatic?: unknown): Promise<void>;
 export {};

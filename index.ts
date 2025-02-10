@@ -25,6 +25,9 @@ export async function knife4jSetup(app: INestApplication, services: Service[], f
     })
     return
   }
+  if (!fastifyStatic) {
+    throw new Error('@fastify/static is not installed please install it first')
+  }
   const fastifyInstance = app.getHttpAdapter().getInstance()
   fastifyInstance.register(fastifyStatic, {
     root: join(__dirname, '../public'),
