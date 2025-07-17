@@ -64,3 +64,12 @@ async function bootstrap() {
 ```
 
 then you can browse on [http://127.0.0.1:3000/doc.html](http://127.0.0.1:3000/doc.html)
+
+
+# Changelog
+
+## [1.0.7] - 2025-07-17
+
+### Fixed
+
+- 修复 bug [issues/2](https://github.com/jkhuangfu/nestjs-knife4j2/issues/2)
