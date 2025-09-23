@@ -6,7 +6,7 @@ The provided code sets up Knife4j for enhancing Swagger/OpenAPI documentation in
 
 ```shell
 npm install nestjs-knife4j2
- # if you want to use fastify, you nedd run  npm install @fastify/static
+ # if you want to use fastify, you need install @fastify/static
 ```
 
 | @fastify/static version | Fastify version |
@@ -64,7 +64,6 @@ async function bootstrap() {
 ```
 
 then you can browse on [http://127.0.0.1:3000/doc.html](http://127.0.0.1:3000/doc.html)
-
 
 # Changelog
 
