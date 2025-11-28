@@ -2,7 +2,7 @@
 
 The provided code sets up Knife4j for enhancing Swagger/OpenAPI documentation in a NestJS application, supporting both Express and Fastify HTTP adapters. Thanks to [@xiaoymin](https://github.com/xiaoymin) for providing the WebUI.
 
-[![NPM version](https://img.shields.io/npm/v/nestjs-knife4j2?style=for-the-badge)](https://www.npmjs.com/package/nestjs-knife4j2) [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)[![GitHub issues](https://img.shields.io/github/issues/jkhuangfu/nestjs-knife4j2?style=for-the-badge)](https://github.com/jkhuangfu/nestjs-knife4j2/issues)
+[![NPM version](https://img.shields.io/npm/v/nestjs-knife4j2?style=for-the-badge)](https://www.npmjs.com/package/nestjs-knife4j2) [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE) [![GitHub issues](https://img.shields.io/github/issues/jkhuangfu/nestjs-knife4j2?style=for-the-badge)](https://github.com/jkhuangfu/nestjs-knife4j2/issues)
 
 ## 📦 Installation
 
