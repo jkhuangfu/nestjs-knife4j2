@@ -74,6 +74,7 @@ then you can browse on [http://127.0.0.1:3000/doc.html](http://127.0.0.1:3000/do
 ### Updated
 
 - 增加对 openapi 中 operationId 重复的处理
+- 删除多余静态资源，减小体积
 
 ## [1.0.7] - 2025-07-17
 
