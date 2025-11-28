@@ -1,7 +1,7 @@
 {
   "name": "nestjs-knife4j2",
-  "version": "1.0.8",
-  "description": "nestjs knife4j swagger openapi api doc",
+  "version": "1.0.9",
+  "description": "NestJS Knife4j integration for enhanced Swagger/OpenAPI documentation with support for both Express and Fastify adapters. Provides a powerful API documentation UI based on Knife4j.",
   "main": "dist/index.js",
   "license": "MIT",
   "keywords": [
