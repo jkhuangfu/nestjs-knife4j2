@@ -69,7 +69,7 @@ then you can browse on [http://127.0.0.1:3000/doc.html](http://127.0.0.1:3000/do
 
 # Changelog
 
-## [1.0.8] - 2025-07-24
+## [1.0.8] - 2025-11-28
 
 ### Updated
 

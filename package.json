@@ -1,9 +1,17 @@
 {
   "name": "nestjs-knife4j2",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "nestjs knife4j swagger openapi api doc",
   "main": "dist/index.js",
   "license": "MIT",
+  "keywords": [
+    "nestjs",
+    "knife4j",
+    "swagger",
+    "openapi",
+    "api",
+    "doc"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jkhuangfu/nestjs-knife4j2.git"
@@ -22,7 +30,6 @@
     "/public",
     "/dist"
   ],
-  "keywords": [],
   "author": "jkhuangfu",
   "devDependencies": {
     "@nestjs/common": "*",
