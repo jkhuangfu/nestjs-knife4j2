@@ -9,6 +9,8 @@ npm install nestjs-knife4j2
  # if you want to use fastify, you need install @fastify/static
 ```
 
+## Compatibility Matrix
+
 | @fastify/static version | Fastify version |
 | ----------------------- | --------------- |
 | `^8.x`                  | `^5.x`          |
@@ -66,6 +68,12 @@ async function bootstrap() {
 then you can browse on [http://127.0.0.1:3000/doc.html](http://127.0.0.1:3000/doc.html)
 
 # Changelog
+
+## [1.0.8] - 2025-07-24
+
+### Updated
+
+- 增加对 openapi 中 operationId 重复的处理
 
 ## [1.0.7] - 2025-07-17
 
