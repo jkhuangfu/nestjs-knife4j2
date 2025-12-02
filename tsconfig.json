@@ -1,16 +1,4 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": false
-  },
-  "files": ["./index.ts"]
+  "files": [],
+  "references": [{ "path": "./tsconfig.js.json" }, { "path": "./tsconfig.dts.json" }]
 }

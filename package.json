@@ -1,16 +1,14 @@
 {
   "name": "nestjs-knife4j2",
-  "version": "1.0.9",
-  "description": "NestJS Knife4j integration for enhanced Swagger/OpenAPI documentation with support for both Express and Fastify adapters. Provides a powerful API documentation UI based on Knife4j.",
+  "version": "1.0.10",
+  "description": "🚨 DEPRECATED: NestJS Knife4j integration for enhanced Swagger/OpenAPI documentation with support for both Express and Fastify adapters. Provides a powerful API documentation UI based on Knife4j. This package is deprecated, please use nestjs-knife4j-plus instead: https://github.com/jkhuangfu/nestjs-knife4j-plus",
   "main": "dist/index.js",
   "license": "MIT",
   "keywords": [
     "nestjs",
     "knife4j",
     "swagger",
-    "openapi",
-    "api",
-    "doc"
+    "openapi"
   ],
   "repository": {
     "type": "git",
@@ -20,26 +18,31 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "dev": "tsc -w",
-    "publish": "npm run build && npm publish",
-    "push": "git add . && git commit -m auto-commit && git push"
+    "build-js": "tsc -p tsconfig.js.json",
+    "build-dts": "tsc -p tsconfig.dts.json",
+    "build": "npm run build-js && npm run build-dts"
   },
   "files": [
-    "/public",
+    "/ui",
     "/dist"
   ],
   "author": "jkhuangfu",
   "devDependencies": {
-    "@nestjs/common": "*",
     "@types/node": "^20.14.12",
     "typescript": "^5.5.4"
   },
   "peerDependencies": {
-    "@types/express": "^4.17.21",
+    "@nestjs/common": "*",
+    "@fastify/static": "*",
     "express": "*",
-    "fastify": "*",
-    "@fastify/static": "*"
+    "fastify": "*"
+  },
+  "peerDependenciesMeta": {
+    "@fastify/static": {
+      "optional": true
+    },
+    "fastify": {
+      "optional": true
+    }
   }
 }

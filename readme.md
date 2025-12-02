@@ -1,3 +1,9 @@
+## 📢 项目迁移通知 (Project Migration Notice)
+
+> ⚠️ 本项目已停止维护，已迁移至新项目 [nestjs-knife4j-plus](https://github.com/jkhuangfu/nestjs-knife4j-plus)，请使用新项目以获取最新功能和修复。
+
+> ⚠️ This project is no longer maintained and has been migrated to the new project [nestjs-knife4j-plus](https://github.com/jkhuangfu/nestjs-knife4j-plus). Please use the new project to get the latest features and fixes.
+
 ## Description
 
 The provided code sets up Knife4j for enhancing Swagger/OpenAPI documentation in a NestJS application, supporting both Express and Fastify HTTP adapters. Thanks to [@xiaoymin](https://github.com/xiaoymin) for providing the WebUI.
@@ -30,8 +36,7 @@ npm install @fastify/static
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
 import { knife4jSetup } from 'nestjs-knife4j2'
 
-// add this code if you want to use fastify adapter
-import fastifyStatic from '@fastify/static'
+// To use this with Fastify, first install @fastify/static. Please ensure version compatibility.
 
 async function bootstrap() {
   const options = new DocumentBuilder()
@@ -48,23 +53,8 @@ async function bootstrap() {
     {
       name: '2.0 version',
       url: `/api-json`,
-      swaggerVersion: '2.0',
-      location: `/api-json`,
     },
   ])
-  // if you want to use fastify adapter, you can use the following code and you must install and import @fastify/static
-  knife4jSetup(
-    app,
-    [
-      {
-        name: '2.0 version',
-        url: `/api-json`,
-        swaggerVersion: '2.0',
-        location: `/api-json`,
-      },
-    ],
-    fastifyStatic,
-  )
 
   await app.listen(3000)
 }
@@ -73,6 +63,12 @@ async function bootstrap() {
 then you can browse on [http://127.0.0.1:3000/doc.html](http://127.0.0.1:3000/doc.html)
 
 ## 📈 Changelog
+
+### [1.0.10] - 2025-12-02
+
+#### Updated
+
+- 优化传参&整合对 fastify 的支持
 
 ### [1.0.8] - 2025-11-28
 
