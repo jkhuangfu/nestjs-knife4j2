@@ -1,6 +1,6 @@
 {
   "name": "nestjs-knife4j2",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "🚨 DEPRECATED: NestJS Knife4j integration for enhanced Swagger/OpenAPI documentation with support for both Express and Fastify adapters. Provides a powerful API documentation UI based on Knife4j. This package is deprecated, please use nestjs-knife4j-plus instead: https://github.com/jkhuangfu/nestjs-knife4j-plus",
   "main": "dist/index.js",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "build": "npm run build-js && npm run build-dts"
   },
   "files": [
-    "/ui",
+    "/public",
     "/dist"
   ],
   "author": "jkhuangfu",
